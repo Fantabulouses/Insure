@@ -14,8 +14,14 @@ $very-light-gray: hsl(0, 0%, 98%)
     a  
         color: hsl(228, 45%, 44%)
 
+.container
+  width: 80%
+  margin: 2rem auto
+  @media screen and ( max-width: 768px )
+    width: 90%
+
 body
-    font-family: 'DM Serif Display', serif
+    font-family: 'Karla', serif
     font-size: 16px
     font-weight: 400
 //header
@@ -47,6 +53,23 @@ h1
     @media screen and ( max-width: 700px )
         font-size: 40px
         text-align: center
+//main
+main
+    margin-top: 15rem
+    .hero
+        margin-top: 2rem
+        display: grid
+        grid-template-columns: 50% 50%
+        &__content
+            margin:  0
+            h2
+                font-family: 'DM Serif Display' 
+                font-size: 4rem
+            &--accent,
+            &--large
+                margin-right: 2rem
+
+        
 
 .features-container
     display: grid
@@ -71,12 +94,7 @@ p
     color: $dark-grayish-violet
 
 
-//footer
 
 
-
-
-
-    
     
 

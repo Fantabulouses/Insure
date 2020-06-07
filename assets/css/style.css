@@ -1,5 +1,9 @@
-* {
-  box-sizing: border-box;
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Karla", serif;
+  font-size: 16px;
 }
 
 .attribution {
@@ -20,29 +24,99 @@
   }
 }
 
-body {
-  font-family: "Karla", serif;
-  font-size: 16px;
-  font-weight: 400;
+a {
+  text-decoration: none;
 }
 
-main {
-  margin-top: 15rem;
+body {
+  font-family: "Karla", serif;
+  font-weight: 400;
+  background: #2d2640;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 500px;
 }
-main .hero {
-  margin-top: 2rem;
+body #left {
+  position: absolute;
+  top: 60%;
+}
+body #right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: #fff;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 2 auto;
+  width: 80%;
+}
+header nav .logo {
+  cursor: pointer;
+}
+header nav .logo img {
+  max-width: 100%;
+  height: auto;
+}
+header nav .nav-links {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+header nav .nav-links a {
+  color: #5a4b81;
+  text-decoration: none;
+}
+
+.hero {
+  margin: 8rem 0;
+}
+.hero__content {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 50% 50%;
 }
-main .hero__content {
-  margin: 0;
+.hero__content--text .horizontal-line {
+  display: inline-block;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 1.5px;
+  width: 140px;
+  background: #fff;
 }
-main .hero__content h2 {
+.hero__content--text h2 {
   font-family: "DM Serif Display";
   font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
-main .hero__content--accent, main .hero__content--large {
-  margin-right: 2rem;
+.hero__content--text p {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+.hero__content--text .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 1px #95a9c6 solid;
+  color: #95a9c6;
+  padding: 10px 15px 10px 15px;
+}
+.hero__content--text--image {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

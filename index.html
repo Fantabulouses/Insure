@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fontawesome.com">
-  
+
   <title>Insure landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body>
-  <header>
 
+<body>
+  <img src="./assets/img/bg-pattern-intro-right-desktop.svg" alt="t" id="right">
+  <img src="./assets/img/bg-pattern-intro-left-desktop.svg" alt="" id="left">
+  <header>
+    <nav>
+      <img src="./assets/img/logo.svg" alt="" class="logo">
+
+      <ul class="nav-links">
+        <li><a href="#">How we work</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">view plans</a></li>
+      </ul>
+
+    </nav>
   </header>
   <main class="container">
     <section class="hero">
+      
+
       <div class="hero__content">
-        <span></span>
-        <h2 class="hero__content--accent">Humanizing your insurance.</h2>
-        <p class="hero__content--large">Get your life insurance coverage easier and faster. We blend our expertise 
-        and technology to help you find the plan that’s right for you. Ensure you 
-        and your loved ones are protected.</p>
-        <a href="#"><button class="hero__content--btn">view plans</button></a>
+        <div class="hero__content--text">
+          <span class="horizontal-line"></span>
+          <h2 class="hero__content--text--accent">Humanizing <br> yourinsurance.</h2>
+          <p class="hero__content--large">Get your life insurance coverage easier and faster. We blend our expertise
+            and technology to help you find the plan that’s right for you. Ensure you
+            and your loved ones are protected.</p>
+          <a href="#" class="btn">view plans</a>
+        </div>
+        <div class="hero__content--image">
+          <img src="./assets/img/image-intro-desktop.jpg" alt="">
+        </div>
       </div>
-      <div class="hero__image">
-        <img src="./assets/img/image-intro-desktop.jpg" alt="">
-      </div>
+
     </section>
     <section>
 
@@ -41,12 +61,12 @@
   </main>
   <footer>
 
-  </footer> 
-  
-    <div class="attribution">
-        challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/organizations/Fantabulouses">Fantabulouses</a>.
-    </div>
+  </footer>
 
-    <script src="./assets/js/app.js"></script>
+  <div class="attribution">
+    challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/organizations/Fantabulouses">Fantabulouses</a>.
+  </div>
+
+  <script src="./assets/js/app.js"></script>
 </body>

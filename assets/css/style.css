@@ -26,6 +26,11 @@ body {
   font-weight: 400;
 }
 
+.pull {
+  color: #000000;
+  font-size: 200px;
+}
+
 main {
   margin-top: 15rem;
 }
